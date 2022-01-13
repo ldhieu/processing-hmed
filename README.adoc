@@ -1,0 +1,3 @@
+= Processing HMED Excel files
+
+This is to help with processing HMED excel output (Jan 2022) files to produce data consistent, ready for ingestion further
