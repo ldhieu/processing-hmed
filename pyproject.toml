@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "processing-hmed"
+version = "0.1.0"
+description = "Processing HMED xls (January 2022 version) to extract information into tables ready to ingest"
+authors = ["Hieu Luu-Danh <hluu@path.org>"]
+license = "EPL-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+xlrd = "^2.0.1"
+openpyxl = "^3.0.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.12b0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
