@@ -1,3 +1,15 @@
 = Processing HMED Excel files
 
 This is to help with processing HMED excel output (Jan 2022) files to produce data consistent, ready for ingestion further
+
+== Steps to get this running
+
+. Install https://www.python.org/downloads/[python (3.10 or above)]
+. Install https://python-poetry.org/docs/[poetry]
+. Put files into `resources/` folder following naming conventions
+. Run the following commands
+----
+$ poetry update
+$ poetry run python process.py -h # if you need help
+$ poetry run python process.py resources/*.xlsx
+----

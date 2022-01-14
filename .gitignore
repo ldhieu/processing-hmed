@@ -1,3 +1,10 @@
+resources/*.xls
+resources/*.xlsx
+output/*.xlsx
+output/*.db
+.idea/
+tmp.db
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
