@@ -1,3 +1,4 @@
+.DS_Store
 resources/*.xls
 resources/*.xlsx
 output/*.xlsx
