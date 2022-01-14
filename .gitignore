@@ -1,8 +1,10 @@
 .DS_Store
 resources/*.xls
 resources/*.xlsx
+resources/*.zip
 output/*.xlsx
 output/*.db
+output/*.zip
 .idea/
 tmp.db
 
