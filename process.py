@@ -172,13 +172,13 @@ if __name__ == "__main__":
     m_query = """
         SELECT province_name, facility_name, drug_name, drug_source, drug_uom, report_year,
         report_month,
-        SUM(ton_dau_ky),
+        MAX(ton_dau_ky),
         SUM(nhap_dinh_ky),
         SUM(nhap_khac),
         SUM(xuat_cho_benh_nhan_trong_ky),
         SUM(xuat_dieu_chuyen_trong_ky),
         SUM(hu_hao),
-        SUM(ton_cuoi_ky)
+        MAX(ton_cuoi_ky)
         FROM drug_stock
         WHERE is_monthly = 1
         GROUP BY province_name, facility_name, report_year, report_month,
@@ -188,13 +188,13 @@ if __name__ == "__main__":
     q_query = """
         SELECT province_name, facility_name, drug_name, drug_source, drug_uom, report_year,
         report_quarter,
-        SUM(ton_dau_ky),
+        MAX(ton_dau_ky),
         SUM(nhap_dinh_ky),
         SUM(nhap_khac),
         SUM(xuat_cho_benh_nhan_trong_ky),
         SUM(xuat_dieu_chuyen_trong_ky),
         SUM(hu_hao),
-        SUM(ton_cuoi_ky)
+        MAX(ton_cuoi_ky)
         FROM drug_stock
         WHERE is_monthly = 0
         GROUP BY province_name, facility_name, report_year, report_quarter,
